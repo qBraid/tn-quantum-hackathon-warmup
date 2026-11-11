@@ -1,0 +1,16 @@
+name: tn-quantum-hackathon-warmup
+id: ari:cloud:compass:8526d2ba-687c-46b3-8b65-acaf550a9b39:component/141c5c30-d6a4-4eb9-b8dd-1a0c55663014/f4804cc9-471d-4872-8c14-66bb0390c9d0
+description: 'Friday warm-up for the Tennessee Quantum Hackathon 2026 (Chattanooga, Nov 13 to 15): the QRNG setup check'
+configVersion: 1
+typeId: SERVICE
+fields:
+  tier: 4
+links:
+  - name: null
+    type: REPOSITORY
+    url: https://github.com/qBraid/tn-quantum-hackathon-warmup
+relationships:
+  DEPENDS_ON: []
+labels:
+  - source:github
+customFields: null
