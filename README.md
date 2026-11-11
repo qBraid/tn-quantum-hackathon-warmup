@@ -16,8 +16,8 @@ Use the invite link pinned in Discord. That's where your team's credits come fro
 2. **Open [`qrng_randomness.ipynb`](./qrng_randomness.ipynb)** and pick the qBraid SDK environment's kernel (Kernel > Change Kernel). The first cell installs qiskit-aer if it's missing, and stops with a message if you're on the wrong kernel.
 3. **Fill in the first `TODO`** (two lines) and run every cell down to the hardware cell.
 4. **Run the hardware cell as written.** It sends your circuit to IonQ's **free** simulator on qBraid and prints a **job ID**. If qBraid prints a warning about measurements, that's expected.
-6. **Optional: try a real quantum computer.** It uses credits. The hardware cell lists a few; the cheapest is Rigetti Cepheus through AWS, at about 40 credits for 200 shots.
 5. **Open the [Jobs page](https://account.qbraid.com/quantum-jobs)** in your qBraid account and find that job. If it's there, your account works.
+6. **Optional: try a real quantum computer.** It uses credits. The hardware cell lists a few; the cheapest is Rigetti Cepheus through AWS, at about 40 credits for 200 shots.
 
 Stuck on any step? Flag a qBraid mentor right away.
 
