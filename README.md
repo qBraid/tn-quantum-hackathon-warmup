@@ -11,7 +11,7 @@ The goal: your qBraid account works and your first quantum job runs before hacki
 1. **Join the hackathon's qBraid organization** with the invite link pinned in Discord. Your team's credits come from there.
 2. **Click Launch on qBraid** (the button above). This repository opens in qBraid Lab.
 3. **Open [`qrng_randomness.ipynb`](./qrng_randomness.ipynb).** A **Select Kernel** box appears with *Python 3 (ipykernel)* selected. Change it to **qBraid-SDK (v0.12.2)** and click **Select**. Don't see it in the list? Flag a mentor.
-4. **Run the first cell** (Shift+Enter). It ends with "Setup OK ... You're good to go". The first time, it installs one package, which takes about a minute.
+4. **Run the first cell** (Shift+Enter). It ends with "Setup OK ... You're good to go". The first time, it installs one package (a few seconds).
 5. **Fill in the `TODO`** (two lines; the hint has them), then run the cells down to the qBraid cell.
 6. **Run the qBraid cell.** It sends your circuit to IonQ's **free** simulator and prints a **job ID**. Find that job on the [Jobs page](https://account.qbraid.com/quantum-jobs) in your qBraid account. If it's there, you're set.
 
