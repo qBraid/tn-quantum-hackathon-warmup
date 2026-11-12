@@ -4,34 +4,30 @@
 
 **Friday, November 13, 7:30 to 8:15 PM Eastern. Not scored. We do it together, live.**
 
-The point is to get your qBraid account and a first quantum job working now, not at midnight.
+The goal: your qBraid account works and your first quantum job runs before hacking starts, not at midnight.
 
-## First: join the hackathon's qBraid organization
+## Steps
 
-Use the invite link pinned in Discord. That's where your team's credits come from.
-
-## The warm-up
-
-1. **Open this repository in qBraid Lab** with the **Launch on qBraid** button above.
-2. **Open [`qrng_randomness.ipynb`](./qrng_randomness.ipynb)** and pick the qBraid SDK environment's kernel: its name, at the top right of the notebook, includes **qBraid**. If it says **No Kernel**, click it and pick that kernel; nothing runs until you do. The first cell installs qiskit-aer if it's missing, stops with a message if you're on a different kernel, and ends with "Setup OK ... You're good to go" when everything's ready.
-3. **Fill in the first `TODO`** (two lines) and run every cell down to the hardware cell.
-4. **Run the hardware cell as written.** It sends your circuit to IonQ's **free** simulator on qBraid and prints a **job ID**.
-5. **Open the [Jobs page](https://account.qbraid.com/quantum-jobs)** in your qBraid account and find that job. If it's there, your account works.
-6. **Optional: try a real quantum computer.** It uses credits. The hardware cell lists a few; the cheapest is Rigetti Cepheus through AWS, at about 40 credits for 200 shots.
+1. **Join the hackathon's qBraid organization** with the invite link pinned in Discord. Your team's credits come from there.
+2. **Click Launch on qBraid** (the button above). This repository opens in qBraid Lab.
+3. **Open [`qrng_randomness.ipynb`](./qrng_randomness.ipynb).** A **Select Kernel** box appears with *Python 3 (ipykernel)* selected. Change it to **qBraid-SDK (v0.12.2)** and click **Select**. Don't see it in the list? Flag a mentor.
+4. **Run the first cell** (Shift+Enter). It ends with "Setup OK ... You're good to go". The first time, it installs one package, which takes about a minute.
+5. **Fill in the `TODO`** (two lines; the hint has them), then run the cells down to the hardware cell.
+6. **Run the hardware cell.** It sends your circuit to IonQ's **free** simulator and prints a **job ID**. Find that job on the [Jobs page](https://account.qbraid.com/quantum-jobs) in your qBraid account. If it's there, you're set.
 
 Stuck on any step? Flag a qBraid mentor right away.
 
+**If you finish early:** run the same circuit on a real quantum computer (it uses credits; the hardware cell lists a few, and the cheapest, Rigetti Cepheus through AWS, is about 40 credits for 200 shots), then try the extra `TODO` at the end of the notebook.
+
 ## What you're building
 
-**Randomness You Can Trust:** a quantum random number generator, compared with the randomness your computer makes in software. It comes from UTC's problem set. The second `TODO`, after the hardware cell, is extra if you finish early.
+A quantum random number generator, compared with the random numbers your computer makes in software. It's Problem 5 of UTC's problem set: *Randomness You Can Trust*.
 
-## Set up your AI helpers
+## Your AI helpers
 
-Now's a good time to try the AI helpers you'll use this weekend:
+- **Chat, for questions:** [AI Chat](https://account.qbraid.com/chat) in your qBraid account. Ask it to explain the circuit, or why the simulator's bits aren't truly random.
+- **An agent, for doing the work:** in qBraid Lab, open the Launcher and click **Claude** or **Codex**. It can open this notebook, change the code and run it. Try asking it for a histogram of the bits.
 
-- **Chat, for questions.** [AI Chat](https://account.qbraid.com/chat) is built into your qBraid account. Try asking it to explain the QRNG circuit, or why the simulator's bits aren't truly random.
-- **An agent, for doing the work.** In qBraid Lab, open the Launcher and click the **Claude** or **Codex** icon. The agent runs inside your Lab, so it can open this notebook, change the code and run it. Try asking it to add a histogram of the QRNG bits.
+## Next
 
-## After the warm-up
-
-Track assignments are announced at 8:15 PM. The challenge repository, [qBraid/tn-quantum-hackathon](https://github.com/qBraid/tn-quantum-hackathon), opens then, with your problem set and starter notebooks. Hacking starts at 8:30 PM.
+Track assignments are announced at 8:15 PM, and the challenge repository, [qBraid/tn-quantum-hackathon](https://github.com/qBraid/tn-quantum-hackathon), opens then. Hacking starts at 8:30 PM.
