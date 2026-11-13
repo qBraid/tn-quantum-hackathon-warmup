@@ -12,7 +12,7 @@ The goal: your qBraid account works and your first quantum job runs before hacki
 2. **Click Launch on qBraid** (the button above). This repository opens in qBraid Lab.
 3. **Open [`qrng_randomness.ipynb`](./qrng_randomness.ipynb).** A **Select Kernel** box appears with *Python 3 (ipykernel)* selected. Change it to **qBraid-SDK (v0.12.2)** and click **Select**. Don't see it in the list? Flag a mentor.
 4. **Run the first cell** (Shift+Enter). It ends with "Setup OK ... You're good to go". The first time, it installs one package (a few seconds).
-5. **Fill in the `TODO`** (two lines; the hint has them), then run the cells down to the qBraid cell.
+5. **Fill in the `TODO`** (two lines; the hint has them) and run that cell, then the attack cell below it. It makes a key two ways and tries to crack both: watch which one falls.
 6. **Run the qBraid cell.** It sends your circuit to IonQ's **free** simulator and prints a **job ID**. Find that job on the [Jobs page](https://account.qbraid.com/quantum-jobs) in your qBraid account. If it's there, you're set.
 
 Stuck on any step? Flag a qBraid mentor right away.
@@ -21,7 +21,7 @@ Stuck on any step? Flag a qBraid mentor right away.
 
 ## What you're building
 
-A quantum random number generator, compared with the random numbers your computer makes in software. It's Problem 5 of UTC's problem set: *Randomness You Can Trust*.
+A quantum random number generator, and an attack that shows why it matters: a key made from software random numbers seeded with the clock falls in seconds. It's Problem 5 of UTC's problem set: *Randomness You Can Trust*.
 
 ## Your AI helpers
 
